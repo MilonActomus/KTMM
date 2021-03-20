@@ -1,7 +1,6 @@
 import numpy as np
 import math
 import json
-import pygame
 import OpenGL
 from PyQt5 import QtCore
 from PyQt5 import QtWidgets
