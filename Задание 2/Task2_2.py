@@ -538,8 +538,8 @@ def main():
         # print("Verlet with threading ", " c_i= ", c_i, " time: ", time_Verl_thr[c_i])
 
         for i in range(1):
-            #time_Verl_proc[c_i] += Verlet_proc(num_elem, Time, delt_t, pos_x, pos_y, v_x, v_y, a, G, mas)
-            time_Verl_proc[c_i] += Verlet_proc_pool(num_elem, Time, delt_t, pos_x, pos_y, v_x, v_y, a, G, mas)
+            time_Verl_proc[c_i] += Verlet_proc(num_elem, Time, delt_t, pos_x, pos_y, v_x, v_y, a, G, mas)
+            #time_Verl_proc[c_i] += Verlet_proc_pool(num_elem, Time, delt_t, pos_x, pos_y, v_x, v_y, a, G, mas)
         time_Verl_proc[c_i] /= 1
         print("Verlet with multiprocessing ", " c_i= ", c_i, " time: ", time_Verl_proc[c_i])
 
